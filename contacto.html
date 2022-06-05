@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- NavBar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="./index.html">App</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#products">Productos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#about">Quienes Somos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Encuentra tu producto" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- Content -->
+    <main>
+
+        <section class="min-vh-100" id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="col"><h1 class="display-2">Contacto</h1></div>
+              </div>
+              <div class="row">
+                  <div class="col-4"><img src="https://www.adatitleiii.com/wp-content/uploads/sites/121/2017/01/iStock-531265203.jpg" alt="Mapa" srcset="" class="img-fluid"></div>
+                  <div class="col-8">
+                      <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Nombre"aria-describedby="nameHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="user@example.com"aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                            <input type="text" class="form-control" id="inputMessage">
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">No soy un Robok</label>
+                          </div>
+                          <button type="submit" value="submit" id="submit" class="btn btn-primary" onclick="validarFormContacto()">Enviar</button>
+                        </form>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col">    
+              <footer
+              class="text-center text-lg-start text-white"
+              style="background-color: #45526e"
+              >
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+              <!-- Section: Links -->
+              <section class="">
+              <!--Grid row-->
+              <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                      Company name
+                  </h6>
+                  <p>
+                      Here you can use rows and columns to organize your footer
+                      content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit.
+                  </p>
+                  </div>
+                  <!-- Grid column -->
+
+                  <hr class="w-100 clearfix d-md-none" />
+
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                  <p>
+                      <a class="text-white">MDBootstrap</a>
+                  </p>
+                  <p>
+                      <a class="text-white">MDWordPress</a>
+                  </p>
+                  <p>
+                      <a class="text-white">BrandFlow</a>
+                  </p>
+                  <p>
+                      <a class="text-white">Bootstrap Angular</a>
+                  </p>
+                  </div>
+                  <!-- Grid column -->
+
+                  <hr class="w-100 clearfix d-md-none" />
+
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                      Useful links
+                  </h6>
+                  <p>
+                      <a class="text-white">Your Account</a>
+                  </p>
+                  <p>
+                      <a class="text-white">Become an Affiliate</a>
+                  </p>
+                  <p>
+                      <a class="text-white">Shipping Rates</a>
+                  </p>
+                  <p>
+                      <a class="text-white">Help</a>
+                  </p>
+                  </div>
+
+                  <!-- Grid column -->
+                  <hr class="w-100 clearfix d-md-none" />
+
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                  <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                  <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                  </div>
+                  <!-- Grid column -->
+              </div>
+              <!--Grid row-->
+              </section>
+              <!-- Section: Links -->
+
+              <hr class="my-3">
+
+              <!-- Section: Copyright -->
+              <section class="p-3 pt-0">
+              <div class="row d-flex align-items-center">
+                  <!-- Grid column -->
+                  <div class="col-md-7 col-lg-8 text-center text-md-start">
+                  <!-- Copyright -->
+                  <div class="p-3">
+                      © 2020 Copyright:
+                      <a class="text-white" href="https://mdbootstrap.com/"
+                      >MDBootstrap.com</a
+                      >
+                  </div>
+                  <!-- Copyright -->
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                  <!-- Facebook -->
+                  <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                      ></a>
+
+                  <!-- Twitter -->
+                  <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                      ></a>
+
+                  <!-- Google -->
+                  <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-google"></i
+                      ></a>
+
+                  <!-- Instagram -->
+                  <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                      ></a>
+                  </div>
+                  <!-- Grid column -->
+              </div>
+              </section>
+              <!-- Section: Copyright -->
+              </div>
+              <!-- Grid container -->
+              </footer>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+    <!-- Validation form -->
+    <script src="./assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
