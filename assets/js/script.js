@@ -1,30 +1,27 @@
 // Validation Form
-
-//Asignamos los valores de los inputs a variables
-const inputName = document.getElementById('inputName').value;
-const inputEmail = document.getElementById('inputEmail').value;
-const inputMessage = document.getElementById('inputMessage').value;
-
-
+console.log('Validation Form');
 function validarFormContacto(){
+  //Asignamos los valores de los inputs a variables
 
-    //Si el input esta vacio lanza alerta de error
-    if (inputName == null || inputName.length == 0) {
-      alert('ATENCIÓN: DEBE INGRESAR SU NOMBRE');
-        return false;
-    }
+  // event.preventDefault();
+  console.log('dentro de la función')
   
-    if (inputEmail == null || inputEmail.length == 0 ) {
-        alert('ATENCIÓN: DEBE INGRESAR CORREO ELECTRONICO');
-        return false;
-    }
-  
-    if (inputMessage == null || inputMessage.length == 0 ) {
-        alert('ATENCIÓN: DEBE INGRESAR MENSAJE A ENVIAR');
-        return false;
-    }
+  const inputName = document.getElementById('inputName');
+  const inputEmail = document.getElementById('inputEmail');
+  const inputMessage = document.getElementById('inputMessage');
 
-    //si nonguno de los campos esta vacio muestra alerta de exito
-    alert('MENSAJE ENVIADO CON EXITO!!! GRACIAS POR CONTACTARNOS');
-    return true;
+  // Si el input está vacío lanza alerta de error
+
+  if (inputName.value =="" || inputName.value.length == 0) {
+    alert("Debes ingresar tu nombre");
+    inputName.focus();
+  } else if (inputEmail.value =="" || inputEmail.value.length == 0) {
+    alert("Debes ingresar tu Email");
+    inputEmail.focus();
+  } else if (inputMessage.value =="" || inputMessage.value.length == 0) {
+    alert("Debes ingresar un mensaje");
+    inputMessage.focus();
+  } else {
+    alert("¡¡¡Mensaje enviado con éxito!!! Gracias por contactarnos");
   }
+}
